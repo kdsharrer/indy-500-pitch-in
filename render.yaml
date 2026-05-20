@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: indy-500-pitch-in
+    runtime: python
+    buildCommand: ""
+    startCommand: "python server.py"
+    disk:
+      name: pitch-in-data
+      mountPath: /data
+      sizeGB: 1
